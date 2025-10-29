@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>会いに行けるウミウシ</title>
+
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'ivf6qox',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">トップ</a></li>
+                <li><a href="about.html">ウミウシを知ろう</a></li>
+                <li><a href="book.html">ウミウシずかん</a></li>
+                <li><a href="#">会いに行こう</a></li>
+                <li><a href="game.html">お楽しみ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="map-cover">
+            <h1>もっと知ろう！</h1>
+        </div>
+        <div class="bg-naminami1">
+
+           
+
+            <div class="japanmap">
+                <h3>会いに行けるウミウシ</h3>
+                <p class="maptext">
+                    魅力的なウミウシですが、細かく分かれた種類ごとに<br>
+                    食べるエサが様々だったり、水質管理がデリケートだったりと<br>
+                    飼育が難しく、ペットショップや水族館でも<br>
+                    目にすることがかなり難しいです。<br>
+                    このページでは、そんなレアなウミウシを飼育する<br>
+                    水族館や、ふれあいやダイビング体験を行う場所を<br>
+                    抜粋して紹介します。<br>
+                    筆者もいつか、訪れたいです。
+            </div>
+            </p>
+        </div>
+        <div class="popup">
+            <img class="mapsize" src="../image_kari/nihonchizu.png" alt="">
+
+            <div class="starsize">
+                <label for="trigger" class="star-button1">
+                    <img class="spin-star mie" src="../image_kari/small_star7_yellow.png" alt="三重県">
+                </label>
+
+                <label for="trigger2" class="star-button1">
+                    <img class="spin-star kagoshima" src="../image_kari/small_star7_yellow.png" alt="鹿児島県">
+                </label>
+
+                <label for="trigger3" class="star-button1">
+                    <img class="spin-star fukui" src="../image_kari/small_star2_skyblue.png" alt="福井県">
+                </label>
+
+                <label for="trigger4" class="star-button1">
+                    <img class="spin-star kanagawa" src="../image_kari/small_star2_skyblue.png" alt="神奈川県">
+                </label>
+                <label for="trigger5" class="star-button1">
+                    <img class="spin-star okinawa" src="../image_kari/small_star2_skyblue.png" alt="沖縄県">
+                </label>
+
+            </div>
+        </div>
+
+        <!--モーダル本体-->
+        <!--1つ目三重県-->
+        <div class="modal_wrap">
+            <input id="trigger" type="checkbox">
+            <div class="modal_overlay">
+                <label for="trigger" class="modal_trigger"></label>
+                <div class="modal_content">
+                    <label for="trigger" class="close_button">✖️</label>
+                    <p class="modal_title2">三重県＊鳥羽水族館</p>
+                    <p>日本一の飼育数を誇る水族館。<br>
+                        ウミウシの仲間を飼育しており、磯採取もしています。<br>
+                        公式HPには、ウミウシ採取を行う様子がブログにUPされています。<br>
+                        最新情報をチェックしてからGo~</p>
+                </div>
+            </div>
+        </div>
+        <!--２つ目鹿児島-->
+
+        <div class="modal_wrap">
+            <input id="trigger2" type="checkbox">
+            <div class="modal_overlay">
+                <label for="trigger2" class="modal_trigger"></label>
+                <div class="modal_content">
+                    <label for="trigger2" class="close_button">✖️</label>
+                    <p class="modal_title2">鹿児島県＊いおワールド<br>鹿児島水族館</p>
+                    <p>ウミウシの専用展示室「うみうし研究所」があり、
+                        日本で初めてウミウシを常設展示しています。<br>
+                        飼育方法や繁殖方法も研究しているようで、
+                        ウミウシ最新情報を教えてくれるかも！</p>
+                </div>
+            </div>
+        </div>
+
+        <!--３つ目福井-->
+
+        <div class="modal_wrap">
+            <input id="trigger3" type="checkbox">
+            <div class="modal_overlay">
+                <label for="trigge3r" class="modal_trigger"></label>
+                <div class="modal_content">
+                    <label for="trigger3" class="close_button">✖️</label>
+                    <p class="modal_title2">福井県＊越前海岸</p>
+                    <p>ウミウシ王国ECHHIZENとして盛り上がりを見せています。<br>
+                        年間200種類のウミウシを観測。<br>
+                        シュノーケリングやダイビング体験で<br>
+                        ウミウシと触れ合うことができるよ</p>
+                </div>
+            </div>
+        </div>
+
+        <!--４つ目神奈川県-->
+
+        <div class="modal_wrap">
+            <input id="trigger4" type="checkbox">
+            <div class="modal_overlay">
+                <label for="trigger4" class="modal_trigger"></label>
+                <div class="modal_content">
+                    <label for="trigger4" class="close_button">✖️</label>
+                    <p class="modal_title2">神奈川県＊三崎港</p>
+                    <p>ウミウシが大好きな”ウミウシハンターズ”による案内で
+                        楽しいダイビング体験ができます。<br>
+                        都心からも近く、関東圏の方は気軽に日帰りで
+                        アクティビティを楽しむことができます。
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!--５つ目沖縄県-->
+
+        <div class="modal_wrap">
+            <input id="trigger5" type="checkbox">
+            <div class="modal_overlay">
+                <label for="trigger5" class="modal_trigger"></label>
+                <div class="modal_content">
+                    <label for="trigger5" class="close_button">✖️</label>
+                    <p class="modal_title2">沖縄県＊ダイビングスポット多数！</p>
+                    <p>水中写真、ウミウシダイビングを得意とする
+                        チーム率いる体験コースでは、
+                        素敵な写真が撮れるかも？<br>
+                        シーズンは冬～春！</p>
+                </div>
+            </div>
+        </div>
+
+<img class="bg-naminami2" src="../image_kari/naminami_bottom.png" alt="">
+    </main>
+
+
+    <footer>
+        <div class="footertext">
+            <p><a href="index.html">トップ</a></p>
+            <ul>
+                <li><a href="about.html">ウミウシを知ろう</a></li>
+                <li><a href="book.html">ウミウシずかん</a></li>
+                <li><a href="map.html">会えるウミウシ</a></li>
+                <li><a href="game.html">お楽しみ</a></li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <small>&copy; 2025 ウミウシの森</small>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

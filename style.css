@@ -1,0 +1,1306 @@
+@charset "UTF-8";
+
+body {
+    text-align: center;
+
+    font-family: vdl-yotag, sans-serif;
+}
+
+header {
+    background-color: #21b8c9;
+    color: #fff;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.5rem;
+    padding: 1.5rem;
+}
+
+.main-cover {
+    background-image: url(../image_kari/top_cover_sp.png);
+    background-size: cover;
+    width: 100%;
+    height: 328px;
+
+}
+
+.top-bg {
+    background-color: #1d2088;
+}
+
+h1 {
+    color: #fff;
+    font-family: ab-lineboard-bold, sans-serif;
+    font-size: 21px;
+    position: absolute;
+    left: 10%;
+    top: 30%;
+}
+
+h2 {
+    color: #fff;
+    font-family: ab-lineboard-bold, sans-serif;
+    font-size: 18px;
+    position: absolute;
+    left: 10%;
+    top: 26%;
+}
+
+.main-cover h2 {
+    font-size: 15px;
+}
+
+.bg-bubble {
+    background-image: url(../image_kari/top_bg_awa.png);
+    background-repeat: repeat-y;
+    background-size: cover;
+    width: 100%;
+}
+
+h3 {
+    color: #fff;
+    font-size: 20px;
+    margin: auto;
+    padding: 5rem 1rem;
+}
+
+h3,
+h4 {
+    font-family: ab-kirigirisu, sans-serif;
+}
+
+p {
+    line-height: 1.9;
+    font-size: 12px;
+}
+
+/*ナビゲーションメニュー*/
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+    transition: border-bottom 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid #ffffff;
+}
+
+
+
+section p {
+    margin: 0 0 0 1.5rem;
+}
+
+.introduction {
+    color: #fff;
+    margin: 0 auto 4rem auto;
+    line-height: 2;
+    padding-top: 4rem;
+}
+
+.hakase h4,
+.meetsmap h4 {
+    writing-mode: vertical-rl;
+    position: absolute;
+    left: 10rem;
+    font-size: 17px;
+}
+
+.umiushibook h4,
+.cardgame h4 {
+    writing-mode: vertical-rl;
+    position: absolute;
+    left: 9rem;
+}
+
+.box {
+    position: relative;
+}
+
+.explanation {
+    background-color: #faee00;
+    margin: 2rem 5rem 2rem 0;
+    padding: 2rem 1rem;
+    border-radius: 0 60px 0 0;
+    width: 80%;
+    z-index: 0;
+    box-shadow: 4px 8px 0 5px #ffffff, -2px 20px 0 rgba(0, 0, 0, .2);
+    transition: color .3s, background .3s, box-shadow .3s, transform 0.3s;
+}
+
+.explanation::before {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 0 60px 0 0;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #fff;
+    transition: .5s;
+    z-index: -1;
+}
+
+.explanation:active::before {
+    width: 100%;
+}
+
+.btn:hover {
+    box-shadow: 0 3px 0 hsl(200deg 47% 60%), 0 6px 0 rgba(0, 0, 0, .2);
+    /*background: rgb(239, 240, 228);*/
+    filter: brightness(1.05);
+    transform: translateY(3px);
+}
+
+
+.pikayellowbox {
+    max-width: 75px;
+    position: absolute;
+    translate: 4rem 0rem;
+    rotate: 30deg;
+}
+
+.explanation img {
+    width: 150px;
+    background-color: #fff;
+}
+
+.hakase {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.books {
+    background-color: #1eae73;
+    margin: 2rem 0 2rem 5rem;
+    padding: 2rem 1.5rem;
+    border-radius: 60px 0 0 0;
+    width: 80%;
+    box-shadow: -1px 10px 0 5px #ffffff, -2px 20px 0 rgba(0, 0, 0, .2);
+    transition: color .3s, background .3s, box-shadow .3s, transform 0.3s;
+}
+
+.booksflex,
+.gameflex {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.explanation,
+.meetsflex {
+    display: flex;
+
+}
+
+.books img {
+    width: 150px;
+    background-color: #fff;
+    padding: 1.3rem;
+}
+
+.umiushibook {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    position: relative;
+}
+
+.meets {
+    background-color: #00e0f1;
+    margin: 2rem 5rem 2rem 0;
+    padding: 2rem 1rem 2rem 1.5rem;
+    border-radius: 0 60px 0 0;
+    width: 80%;
+    box-shadow: 4px 8px 0 5px #ffffff, -2px 20px 0 rgba(0, 0, 0, .2);
+    transition: color .3s, background .3s, box-shadow .3s, transform 0.3s;
+
+}
+
+.meets img {
+    width: 150px;
+    background-color: #fff;
+    padding: 1.3rem;
+}
+
+.meetsmap {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.game {
+    background-color: #ff5f76;
+    margin: 2rem 0 2rem 5rem;
+    padding: 2rem 1.5rem 2rem 1.5rem;
+    border-radius: 60px 0 0 0;
+    width: 80%;
+    box-shadow: -1px 10px 0 5px #ffffff, -2px 20px 0 rgba(0, 0, 0, .2);
+    transition: color .3s, background .3s, box-shadow .3s, transform 0.3s;
+}
+
+.game img {
+    width: 150px;
+    background-color: #fff;
+    padding: 1.2rem;
+}
+
+.cardgame {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    position: relative;
+}
+
+.umiushi-group {
+    position: relative;
+    padding-bottom: 20rem;
+}
+
+.aominotop:hover {
+    animation: hoverShake 0.15s linear 3;
+}
+
+.aotop:hover {
+    animation: hoverShake o.15s linear 3;
+}
+
+@keyframes hoverShake {
+    0% {
+        transform: skew(0deg, 0deg);
+    }
+
+    25% {
+        transform: skew(1deg, 1deg);
+    }
+
+    75% {
+        transform: skew(-1deg, -1deg);
+    }
+
+    100% {
+        transform: skew(0deg, 0deg);
+    }
+}
+
+.umiushi-group img {
+    max-width: 75px;
+}
+
+.aominotop {
+    position: absolute;
+    rotate: -27deg;
+    left: 6%;
+    top: 25%
+}
+
+.aotop {
+    position: absolute;
+    right: 10%;
+    rotate: 21deg;
+    top: 19%;
+}
+
+.pikatop {
+    position: absolute;
+    rotate: -25deg;
+    top: 10%;
+    left: 35%;
+}
+
+.elizabethtop {
+    position: absolute;
+    rotate: 28deg;
+    left: 27%;
+    top: 54%;
+}
+
+.cinderellatop {
+    position: absolute;
+    rotate: -13deg;
+    left: 53%;
+    top: 37%;
+}
+
+.shirotop {
+    position: absolute;
+    top: 54%;
+    right: 6%;
+    rotate: 20deg;
+}
+
+footer {
+    background-color: #a48b78;
+    color: #fff;
+
+}
+
+.footertext {
+    display: flex;
+    padding: .5rem;
+    line-height: 1.5;
+    font-size: 13px;
+}
+
+.footertext p {
+    padding: 0 2rem 0 0;
+}
+
+/*about ウミウシを知ろう*/
+
+.about-bg {
+    background-color: #1d2088;
+    padding-bottom: 7rem;
+}
+
+.about-cover {
+    background-image: url(../image_kari/about_cover_sp.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 255px;
+    position: relative;
+}
+
+.about-cover h1 {
+    position: absolute;
+    top: 22%;
+
+}
+
+.abouttext {
+    color: #fff;
+    line-height: 1.7;
+    padding-bottom: 4rem;
+}
+
+.fadein-bottom {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 1.5s ease;
+}
+
+.fadein-bottom.show {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+
+/* 最初は左にオフセットしつつ透明に */
+.slidein-left {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: transform 0.4s ease-out, opacity 0.4s ease-out;
+}
+
+/* スクロールで表示されたら元の位置に戻して表示 */
+.slidein-left.scrollin {
+  opacity: 1;
+  transform: translateX(0);
+  transform: skewY(-4deg);
+}
+
+.skew-wrapper {
+    transform: skewY(-4deg);
+    margin-top: -60px;
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.slant-bg {
+
+    background-color: #f39800;
+    padding: 150px 0;
+    position: relative;
+    clip-path: polygon(0% 72%, 0% 0%, 100% -2%, 100% 100%);
+    z-index: 1;
+}
+
+
+
+.size {
+    transform: skewY(4deg);
+    width: 65%;
+    margin: 0 auto;
+}
+
+
+
+.bigsmall {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+}
+
+.minimam {
+    width: 22px;
+}
+
+.hands {
+    width: 55px;
+}
+
+.maxim {
+    width: 151px;
+}
+
+.eating {
+    background-color: #fff;
+    margin-bottom: 3rem;
+}
+
+.eating h4 {
+    writing-mode: vertical-rl;
+    margin-right: 2rem;
+}
+
+.eating img {
+    width: 228px;
+    height: 171px;
+}
+
+.eatingpic {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+    position: relative;
+}
+
+.age {
+    background: linear-gradient(#fff, #00e0f1, #fff);
+    padding: 5rem 0;
+}
+
+.age h4 {
+    margin: 2rem;
+}
+
+.encounter {
+    /* background-color: #e4007f;
+    padding-top: 3rem; */
+    position: relative;
+    z-index: 1;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.heart-bg {
+    background-image: url(../image_kari/heart.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 1030px;
+    margin: auto;
+    position: relative;
+}
+
+.pairumiushi {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+
+}
+
+.pairumiushi img {
+    max-width: 110px;
+}
+
+.whitelove {
+    max-width: 63px;
+    position: absolute;
+    translate: -50% -5%;
+}
+
+.pair2 {
+    transform: scaleX(-1);
+}
+
+.reason p {
+    margin: 1rem;
+}
+
+.reason img {
+    width: 300px;
+    height: 200px;
+}
+
+.colorful h4 {
+    margin: 2rem;
+}
+
+.coralbg1 {
+    width: 100%;
+    max-width: 768px;
+    margin: auto;
+}
+
+/*book ずかん*/
+.book-topbg {
+    color: #d4eaff;
+}
+
+.book-cover {
+    background-image: url(../image_kari/bookbg_sp.png);
+    background-size: contain;
+    height: 235px;
+    width: 100%;
+    background-repeat: repeat-x;
+    position: relative;
+}
+
+.book-cover h1 {
+    text-align: center;
+}
+
+.booktext {
+    margin: 3rem;
+    color: #FFFFFF;
+}
+
+.longbook h3 {
+    color: black;
+}
+
+.booklist {
+    text-align: left;
+    padding-bottom: 9rem;
+}
+
+.background-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+}
+
+.bg {
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+}
+
+.top {
+    background-image: url(../image_kari/longbook_top.png);
+    background-repeat: no-repeat;
+
+}
+
+.center {
+    background-image: url(../image_kari/longbook_center.png);
+    background-repeat: repeat-y;
+}
+
+.bottom {
+    background-image: url(../image_kari/longbook_bottom.png);
+    background-repeat: no-repeat;
+}
+
+.longbook {
+    position: absolute;
+}
+
+/*アコーディオン*/
+.details {
+    transition: .3s;
+    overflow: hidden;
+    margin-top: -10px;
+    padding-bottom: 20px;
+    max-width: 270px;
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+.details[open] {
+    margin-top: 0;
+    padding-bottom: 10px;
+    max-width: 270px;
+}
+
+.accordion {
+    display: block;
+    padding: 15px;
+    transition: .3s;
+    transform: translateY(10px);
+    background-color: #f7f5b3;
+    margin: 0 3rem;
+    max-width: 270px;
+
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.accordion::-webkit-details-marker {
+    display: none;
+}
+
+.details[open] .accordion {
+    transform: translateY(0);
+}
+
+.details-content {
+    padding: 20px;
+    background-color: #f9f7c4;
+    border: 1px solid black;
+    margin: 0 3rem;
+    max-width: 270px;
+
+}
+
+.details-content2 {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid black;
+    margin: 0 3rem;
+    max-width: 270px;
+
+}
+
+/*meets 会いに行こう*/
+.bg-naminami1 {
+    background-image: url(../image_kari/naminami_top.png);
+    background-repeat: repeat-x;
+    background-size: contain;
+    height: 211px;
+    width: 100%;
+}
+
+.bg-naminami2 {
+    background-repeat: repeat-x;
+    background-size: cover;
+    height: 211px;
+    width: 100%;
+}
+
+.japanmap h3 {
+    color: black;
+}
+
+.map-cover {
+    background-image: url(../image_kari/meet.jpg);
+    background-size: cover;
+    height: 259px;
+    position: relative;
+}
+
+.maptext {
+    font-size: 12px;
+}
+
+.mapsize {
+    max-width: 374px;
+}
+
+.popup {
+    position: relative;
+    max-width: 374px;
+    margin: 45% auto 0;
+}
+
+.starsize img {
+    width: 37px;
+}
+
+.mie {
+    position: absolute;
+    top: 62%;
+    left: 45%;
+}
+
+.kagoshima {
+    position: absolute;
+    top: 78%;
+    left: 12%;
+}
+
+.fukui {
+    position: absolute;
+    top: 49%;
+    left: 40%;
+}
+
+.kanagawa {
+    position: absolute;
+    top: 59%;
+    right: 30%;
+}
+
+.okinawa {
+    position: absolute;
+    top: 88%;
+    left: 0%;
+
+}
+
+/*--------------------------------------
+  モーダル表示上から_002
+--------------------------------------*/
+.modal_wrap input {
+    display: none;
+}
+
+.modal_overlay {
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.5s, transform 0s 0.5s;
+    transform: scale(0);
+}
+
+.modal_trigger {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.modal_content {
+    align-self: center;
+    width: 80%;
+    padding: 30px 20px 15px;
+    box-sizing: border-box;
+    background: #fff;
+    line-height: 1.4em;
+    transition: 0.5s;
+}
+
+.modal_content p {
+    padding-top: 0;
+}
+
+.close_button {
+    position: absolute;
+    top: 14px;
+    right: 16px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.modal_wrap input:checked~.modal_overlay {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 0.5s;
+}
+
+.modal_wrap input:checked~.modal_overlay .modal_content {
+    transform: translateY(20px);
+}
+
+.star-button1 {
+    color: #4f96f6;
+
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: block;
+    margin-bottom: 1px;
+    max-width: 300px;
+    text-decoration: none;
+}
+
+/*.star-button1:active {
+    ボタンを押したとき
+-webkit-transform: translateY(2px);
+transform: translateY(2px);
+/*下に動く
+
+}*/
+
+
+/*アイコンを表示
+.star-button1:after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f2d0";
+    padding-left: 8px;
+}*/
+
+/*ラベルホバー時*/
+.star-button1:hover {
+    color: #FFFFFF;
+    background-color: #4f96f6;
+    transition: .6s;
+}
+
+.modal_title2 {
+    font-size: 1.5em;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.modal_title2::before,
+.modal_title2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+}
+
+/* h2 プライマリカラー*/
+.modal_title2:before {
+    border-bottom: 4px solid #6bb6ff;
+    width: 100%;
+}
+
+/* h2 セカンダリカラー*/
+.modal_title2:after {
+    border-bottom: 4px solid #c8e4ff;
+    width: 100%;
+}
+
+.star-button1:hover img {
+    transform: scale(1.1);
+    /* ホバー時に拡大 */
+}
+
+/*ここまでがモーダル*/
+
+/*星くるくる*/
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    30% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.spin-star {
+    display: inline-block;
+    animation: spin 2s ease-in-out infinite;
+    transform-origin: center;
+}
+
+
+/*game しんけいすいじゃく */
+.game-cover {
+    background-image: url("../image_kari/game_cover.png");
+    background-size: cover;
+
+    height: 351px;
+}
+
+.game-cover h2 {
+    color: #17184b;
+    position: absolute;
+    top: 30%;
+    left: 4rem;
+    font-size: 20px;
+    font-family: ab-lineboard-bold, sans-serif;
+}
+
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    background-color: #2ea7e0;
+
+}
+
+.bubble1 {
+    position: absolute;
+    top: 23rem;
+    left: 4%;
+    width: 100px;
+    animation: 20s linear infinite rotation1;
+}
+
+.bubble2 {
+    position: absolute;
+    left: 69%;
+    top: 14%;
+    animation: 40s linear infinite rotation2;
+}
+
+@keyframes rotation1 {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotation2 {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.game-content {
+    width: 100%;
+    max-width: 20rem;
+    margin: 0 auto 4rem;
+    padding: 1rem;
+}
+
+.game-bg {
+    width: 100%;
+}
+
+/*カードデザインーレイアウト*/
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.card-wrapper {
+    aspect-ratio: 1/1;
+    perspective: 1000px;
+    /* 3D効果のための遠近感 */
+}
+
+.card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    border-radius: 0.375rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* カードがめくられた状態 */
+.card.flipped {
+    transform: rotateY(180deg);
+}
+
+/* カードがマッチした状態 */
+.card.matched .card-front {
+    background-color: #dcfce7;
+    border: 1px solid #86efac;
+}
+
+/* カードの表面と裏面の共通スタイル */
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.card-back {
+    background: linear-gradient(to right, #cdcb2d, #d638d2);
+    transform: rotateY(0deg);
+}
+
+.card-front {
+    background: #fff;
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-front img {
+    width: 80%;
+    object-fit: cover;
+}
+
+/* タイマーとコントロール */
+.game-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    background-color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    /* 完全な丸 */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.clock-icon {
+    margin-right: 0.5rem;
+    color: #a855f7;
+    /* 紫色 */
+}
+
+.timer-text {
+    color: #7e22ce;
+    /* 紫色 */
+    font-family: monospace;
+    font-size: 1.25rem;
+    /* 20px */
+}
+
+.reset-button {
+    background: linear-gradient(to right, #ec4899, #a855f7);
+    /* ピンクから紫のグラデーション */
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.375rem;
+    /* 6px */
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.reset-button:hover {
+    background: linear-gradient(to right, #db2777, #9333ea);
+    /* 濃いピンクから濃い紫 */
+}
+
+/* 完了メッセージ */
+.completion-message {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background-color: #fef9c3;
+    /* 薄い黄色 */
+    border: 1px solid #fde047;
+    /* 黄色の境界線 */
+    border-radius: 0.5rem;
+    /* 8px */
+    text-align: center;
+    /* デフォルトでは非表示 */
+    display: none;
+}
+
+/* JavaScriptで.visibleクラスを追加したときに表示 */
+.completion-message.visible {
+    display: block;
+}
+
+.completion-title {
+    color: #854d0e;
+    /* 濃い黄色 */
+    font-weight: bold;
+    font-size: 1.125rem;
+    /* 18px */
+}
+
+.completion-time {
+    color: #a16207;
+    /* 黄色 */
+}
+
+/*ここまで*/
+
+
+
+
+
+
+
+@media (min-width:800px) {
+
+    p {
+        font-size: 29px;
+    }
+
+    h1 {
+        font-size: 60px;
+        top: 45%;
+    }
+
+    h2 {
+        font-size: 45px;
+        top: 35%;
+    }
+
+    .main-cover h2 {
+        font-size: 45px;
+    }
+
+    h3 {
+        font-size: 55px;
+    }
+
+    h4 {
+        font-size: 40px;
+    }
+
+    .hakase h4,
+    .meetsmap h4 {
+        font-size: 30px;
+        left: 18.5rem;
+    }
+
+    .umiushibook h4,
+    .cardgame h4 {
+        font-size: 30px;
+
+    }
+
+    .main-cover {
+        background-image: url(../image_kari/top_cover.jpg);
+        height: 728px;
+    }
+
+    .map-cover {
+        background-image: url(../image_kari/meet_kakucho.png);
+        background-size: cover;
+        height: 583px;
+    }
+
+    .hakase img,
+    .umiushibook img,
+    .meetsmap img,
+    .cardgame img {
+        width: 300px;
+    }
+
+    .books img {
+        padding: 3.3rem;
+    }
+
+    .umiushibook h4,
+    .cardgame h4 {
+        left: 17rem;
+    }
+
+    .about-cover {
+        background-image: url(../image_kari/about_cover.png);
+        background-size: cover;
+        width: 100%;
+        height: 489px;
+    }
+
+    .eating {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        margin: 5rem auto
+    }
+
+    .eating h4 {
+        order: 1;
+        margin: 0 2rem 0 2rem;
+    }
+
+    .age {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+        padding: 10rem 0 10rem;
+    }
+
+    .color-container {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        justify-content: center;
+    }
+
+    .color-container img {
+        width: 516px;
+        height: 344px;
+    }
+
+    .reason p {
+        margin: 1rem 9rem 2rem;
+    }
+
+    .maptext {
+        font-size: 29px;
+    }
+
+    .game-cover {
+        height: 575px;
+    }
+
+    .game-cover h2 {
+        font-size: 45px;
+    }
+
+    .game-content {
+        max-width: 46rem;
+    }
+
+    /*zukan*/
+    .book-cover {
+        background-image: url(../image_kari/bookbg_web.png);
+        background-size: contain;
+        width: 100%;
+        height: 426px;
+    }
+
+    .book-cover h1 {
+        top: 10%;
+        left: 30%;
+    }
+
+    .longbook h3 {
+        top: 10%;
+    }
+
+    .booklist {
+        margin: 0 5rem;
+    }
+
+    .details {
+        max-width: 1186px;
+    }
+
+    .details[open] {
+        max-width: 1186px;
+    }
+
+    .accordion {
+        max-width: 1186px;
+    }
+
+    .details-content {
+        max-width: 1186px;
+        font-size: 16px;
+    }
+
+    .details-content2 {
+        max-width: 1186px;
+        font-size: 16px;
+    }
+
+    .completion-message {
+        transform: translate(10px, -473px);
+        background-color: rgba(254, 249, 195, 0.7);
+
+    }
+}
